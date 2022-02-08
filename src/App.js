@@ -1,0 +1,19 @@
+import React from 'react'
+import NavBar from './Components/NavBar/NavBar'
+import Banner from './Components/Banner/Banner'
+import './App.css'
+import {action,originals} from './urls'
+import RowPost from './Components/RowPost/RowPost'
+
+function App() {
+  return (
+    <div>
+      <NavBar/>
+      <Banner/>
+      <RowPost url={originals} title='Netflix Orginals ' />
+      <RowPost url={action} title='Actions' isSmall/>
+    </div>
+  )
+}
+
+export default App
